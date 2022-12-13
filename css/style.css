@@ -248,7 +248,7 @@ table {
 }
 
 .fixed {
-    /* position: fixed; */
+    position: fixed;
     left: 62%;
     padding: 27px 25px 21px;
     max-width: 311px;
