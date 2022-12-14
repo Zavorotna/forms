@@ -232,6 +232,12 @@ table {
     background-color: #07be51;
 }
 
+.fixed-head {
+    position: fixed;
+    left: 62%;
+    z-index: 1;
+}
+
 .fixed-head h2 {
     padding-right: 86px;
 }
@@ -248,6 +254,13 @@ table {
     font-size: 30px;
     color: #b3b3b3;
     transform: rotate(-45deg);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.exit-fix:hover {
+    color: #07be51;
+    transform: rotate(45deg);
 }
 
 .fixed {
@@ -615,6 +628,7 @@ table {
 }
 
 .list:checked + label::before {
+    top: -1.5px;
     left: -55px;
     width: 45px;
     height: 25px;
@@ -683,16 +697,18 @@ table {
     position: relative;
 }
 
+.arrow > select,
+.arrow-bottom > select {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
 .arrow::before,
 .arrow::after {
     content: "";
     position: absolute;
     top: 35.6%;
     right: 7px;
-    width: 5px;
-    height: 1px;
-    background-color: #1f222c;
-    border: 1px solid #1f222c;
 }
 
 .flex-radio-tb {
@@ -730,6 +746,11 @@ table {
     width: 170px;
     border-radius: 3px;
     background-color: #3e6aff;
+    transition: all 1s ease;
+}
+
+.add-file + label:hover {
+    background-color: #0b267c;
 }
 
 .button-file label {
@@ -777,10 +798,6 @@ table {
 .arrow-bottom::before {
     top: 35.6%;
     right: 9px;
-    width: 5px;
-    height: 1px;
-    background-color: #1f222c;
-    border: 1px solid #1f222c;
 }
 
 .line-two::after {
