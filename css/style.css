@@ -89,7 +89,7 @@
 
 body {
     margin: 0;
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Slab", sans-serif;
     box-sizing: border-box;
 }
 
@@ -98,6 +98,7 @@ h1 {
     color: #1f222c;
     font-weight: 700;
     text-align: center;
+    font-family: "Roboto Slab", serif;
 }
 
 h2 {
@@ -110,7 +111,8 @@ h2 {
 
 hr {
     margin: 50px 0;
-    border: 1px solid #dcdcde;
+    border: none;
+    border-top: 1px solid #dcdcde;
 }
 
 input,
@@ -119,9 +121,10 @@ select {
     width: 100%;
     margin-bottom: 9px;
     padding: 10px 17px;
-    border-radius: 3px;
+    font-family: "Roboto Slab", sans-serif;
     background-color: #fff;
     border: 1px solid #ccc;
+    border-radius: 3px;
     outline: none;
     border: none;
     box-sizing: border-box;
@@ -592,9 +595,10 @@ table {
 }
 
 .list + label::before {
+    top: -3px;
     left: -55px;
     width: 45px;
-    height: 25px;
+    height: 24px;
     border-radius: 12px;
     background-color: #cfcfd1;
     transition: all .5s ease;
