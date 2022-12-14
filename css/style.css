@@ -618,7 +618,7 @@ table {
 
 .list + label::after {
     top: 0px;
-    left: -52px;
+    left: -53px;
     width: 21px;
     height: 21px;
     border-radius: 11px;
