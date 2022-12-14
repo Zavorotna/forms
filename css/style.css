@@ -700,14 +700,20 @@ table {
 .arrow-bottom > select {
     appearance: none;
     -webkit-appearance: none;
+    cursor: pointer;
 }
 
 .arrow::before,
 .arrow::after {
     content: "";
     position: absolute;
-    top: 35.6%;
-    right: 7px;
+    right: 10px;
+    top: 35%;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #1f222c;
+    cursor: pointer;
 }
 
 .flex-radio-tb {
@@ -795,13 +801,17 @@ table {
 }
 
 .arrow-bottom::before {
-    top: 35.6%;
-    right: 9px;
+    right: 10px;
+    top: 38%;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #1f222c;
 }
 
 .line-two::after {
     top: 22%;
-    right: 20px;
+    right: 25px;
     width: 2px;
     height: 20px;
     border-left: 1px solid;
