@@ -121,7 +121,7 @@ select {
     width: 100%;
     margin-bottom: 9px;
     padding: 10px 17px;
-    font-family: "Roboto Slab", sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -801,6 +801,15 @@ table {
 }
 
 .arrow-bottom::before {
+    right: 10px;
+    top: 38%;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #1f222c;
+}
+
+.arrow-bottom:checked::before {
     right: 10px;
     top: 38%;
     width: 0;
