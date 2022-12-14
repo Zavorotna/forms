@@ -517,7 +517,7 @@ table {
 
 .man-form {
     margin: 0;
-    padding-bottom: 68px;
+    padding-bottom: 40px;
 }
 
 .man + label,
@@ -694,13 +694,18 @@ table {
 
 .arrow {
     position: relative;
+    display: block;
+    background-color: #fff;
 }
 
 .arrow > select,
 .arrow-bottom > select {
+    position: relative;
+    background-color: transparent;
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
+    z-index: 1;
 }
 
 .arrow::before,
@@ -714,6 +719,7 @@ table {
     border: 6px solid transparent;
     border-top-color: #1f222c;
     cursor: pointer;
+    z-index: 0;
 }
 
 .flex-radio-tb {
@@ -752,10 +758,12 @@ table {
     border-radius: 3px;
     background-color: #3e6aff;
     transition: all 1s ease;
+    cursor: pointer;
 }
 
 .add-file + label:hover {
-    background-color: #0b267c;
+    filter: drop-shadow(0px 2px 2.5px rgba(15,40,126,0.35));
+    background-color: #2857f4;
 }
 
 .button-file label {
