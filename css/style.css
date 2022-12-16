@@ -831,7 +831,7 @@ table {
     right: 25px;
     width: 2px;
     height: 20px;
-    border-left: 1px solid;
+    border-left: 1px solid #ccc;
 }
 
 .butt-before {
@@ -854,8 +854,3 @@ table {
     border: none;
     padding: 15px 26px;
 }
-
-
-
-
-
