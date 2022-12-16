@@ -155,8 +155,9 @@ option {
 input,
 select,
 textarea {
+    width: 100%;
     margin-bottom: 9px;
-    padding: 13px 17px;
+    padding: 12px 17px;
     border-radius: 3px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -206,8 +207,8 @@ table {
     justify-content: space-between;
 }
 
-.simple-form {
-    max-width: 331px;
+section.simple-form {
+    width: 330px;
 }
 
 .second-mail {
@@ -648,7 +649,7 @@ table {
 
 .table-form-simple {
     margin: 0;
-    max-width: 500px;
+    width: 500px;
 }
 
 .table-form-simple p {
@@ -684,7 +685,7 @@ table {
 }
 
 .gap-input {
-    max-width: 341px;
+    width: 341px;
     row-gap: 0;
 }
 
