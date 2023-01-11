@@ -193,7 +193,7 @@ table {
 
 .wrapper {
     margin: 80px auto 144px;
-    max-width: 990px;
+    max-width: 74%;
 }
 
 .flex {
@@ -235,7 +235,7 @@ section.simple-form {
 
 .fixed-head {
     position: fixed;
-    left: 62%;
+    right: 12%;
     z-index: 1;
 }
 
@@ -264,9 +264,21 @@ section.simple-form {
     transform: rotate(45deg);
 }
 
+.fixed-head:before {
+    display: none;
+}
+
+.none-hidden-check:checked + .fixed-head {
+    display: block;
+}
+
+.none-check {
+    display: none;
+}
+
 .fixed {
     position: fixed;
-    left: 62%;
+    right: 13%;
     padding: 27px 25px 21px;
     max-width: 311px;
     border-radius: 5px;
