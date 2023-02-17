@@ -32,13 +32,15 @@
                         <label for="button"><input class="button-simple" type="button" name="button" value="Зареєструватися"></label>
                     </form>
                 </section>
-                <section class="simple-form fixed-head">
+                <p class="bott-form" id="bottForm"><a class="button-simple" href="#">Відкрити форму</a></p>
+                <section class="simple-form fixed-head" id="fixed">
+                    <!-- зробити кнопку для відкривання форми -->
                     <h2>06. фіксована форма</h2>
                     <div class="fixed">
                         <form class="flex plus" action="">
                             <p class="exit-fix">
-                                <input class="none-check exit-fix" type="checkbox" id="none-check">
-                                <label class="none" for="none-check">+</label>
+                                <input class="exit-fix" id="exit" name="exit" type="checkbox">
+                                <label class="none exit-fix" for="exit">+</label>
                             </p>
                             <p class="flex fixed-flex">
                                 <label for="login">Логін</label>
@@ -305,3 +307,11 @@
     </div>
 </body>
 </html>
+<script>
+    exit.onclick = function () {
+        fixed.style.display = "none"
+    }
+    bottForm.onclick = function () {
+        fixed.style.display = "block"
+    }
+</script>

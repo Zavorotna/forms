@@ -216,6 +216,17 @@ section.simple-form {
     height: 131px;
 }
 
+.bott-form {
+    position: relative;
+    top: 60px;
+    left: -14%;
+}
+
+.bott-form a {
+    padding: 12px 25px;
+    text-decoration: none;
+}
+
 .button-simple {
     padding: 13px 0;
     width: 100%;
@@ -249,32 +260,20 @@ section.simple-form {
 
 .exit-fix {
     position: absolute;
-    top: -25px;
-    right: -15px;
+    top: -8px;
+    right: -5px;
     margin: 0;
     font-size: 30px;
     color: #b3b3b3;
-    transform: rotate(-45deg);
+    transform: rotate(68deg);
     transition: all 1s ease;
     cursor: pointer;
 }
 
 .exit-fix:hover {
     color: #07be51;
-    transform: rotate(45deg);
 }
 
-.fixed-head:before {
-    display: none;
-}
-
-.none-hidden-check:checked + .fixed-head {
-    display: block;
-}
-
-.none-check {
-    display: none;
-}
 
 .fixed {
     position: fixed;
